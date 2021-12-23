@@ -23,7 +23,7 @@ recognition.onresult = function run(event) {
 function speak(){
 var synth = window.speechSynthesis;
 speak_data = "Taking selfie, hold on for 3 seconds!";
-var utterThis = new speechSynthesisUtterance(speak_data);
+var utterThis = new SpeechSynthesisUtterance(speak_data);
 synth.speak(utterThis);
 Webcam.attach(camera);
 setTimeout(function(){
